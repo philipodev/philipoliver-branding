@@ -3,27 +3,31 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/lib/index.js",
-  "files": ["dist"],
+  "private": false,
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "xprepublish": "npm run build:react",
+    "prepublish": "npm run build:react",
     "build:react": "tsc",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Philip Oliver",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-links": "^5.3.18",
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.18",
+    "@types/node": "13.11.1",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.6",
     "babel-loader": "^8.1.0",
-    "react-docgen-typescript-loader": "^3.7.2",
     "react": "^16.13.1",
+    "react-docgen-typescript-loader": "^3.7.2",
     "react-dom": "^16.13.1",
     "ts-loader": "^7.0.1",
     "typescript": "^3.8.3"
