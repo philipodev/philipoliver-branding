@@ -4,6 +4,7 @@
   "description": "",
   "main": "dist/lib/index.js",
   "private": false,
+  "types": "./dist/types/index.d.ts",
   "files": [
     "dist"
   ],
